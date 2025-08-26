@@ -1,7 +1,7 @@
 <?php
 session_start();
-include '../includes/conexao.php';
-include '../includes/header.php';
+include 'includes/conexao.php';
+include 'includes/header.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $nome = $_POST['nome'];
@@ -33,5 +33,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-<?php include '../includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
 
