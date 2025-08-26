@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-include '../includes/header.php';
-include '../includes/funcoes.php';
+include 'includes/header.php';
+include 'includes/funcoes.php';
 if (!isset($_SESSION['usuario'])) {
     header("Location: login.php");
     exit();
@@ -31,7 +31,7 @@ $result = $conn->query("SELECT * FROM produtos");
   <div class="carousel-track" id="carousel-track">
     <?php while ($row = $result->fetch_assoc()): ?>
       <div class="carousel-item">
-        <img src="../imagens/<?php echo $row['imagem']; ?>" alt="<?php echo $row['nome']; ?>">
+        <img src="imagens/<?php echo $row['imagem']; ?>" alt="<?php echo $row['nome']; ?>">
         <h3><?php echo $row['nome']; ?></h3>
         <p><?php echo $row['descricao']; ?></p>
         <p><strong>R$ <?php echo number_format($row['preco'], 2, ',', '.'); ?></strong></p>
@@ -77,4 +77,5 @@ $result = $conn->query("SELECT * FROM produtos");
   <a href="carrinho.php" class="botao">🛒 Ver Carrinho</a>
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
+
