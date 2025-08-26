@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 }
 
-include '../includes/header.php';
+include 'includes/header.php';
 ?>
 
 <h2>Login</h2>
@@ -43,4 +43,5 @@ include '../includes/header.php';
 
 
 <?php include 'includes/footer.php'; ?>
+
 
