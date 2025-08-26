@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../includes/conexao.php';
+include 'includes/conexao.php';
 
 $msg = "";
 
@@ -42,4 +42,5 @@ include '../includes/header.php';
 
 
 
-<?php include '../includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
+
