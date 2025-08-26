@@ -1,4 +1,4 @@
-     <link rel="stylesheet" href="/docaria-amorim/css/style.css">
+     <link rel="stylesheet" href="css/style.css">
 
  <footer>
   <p>© 2025 Doçaria Amorim. Todos os direitos reservados.</p>
@@ -6,3 +6,4 @@
 
 </body>
 </html>
+
