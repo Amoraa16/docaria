@@ -5,8 +5,8 @@ if (!isset($_SESSION['usuario'])) {
     exit();
 }
 
-include '../includes/header.php';
-include '../includes/funcoes.php';
+include 'includes/header.php';
+include 'includes/funcoes.php';
 
 if (isset($_POST['comprar'])) {
     if (!empty($_SESSION['carrinho'])) {
@@ -68,8 +68,9 @@ $total = 0;
   </form>
 </div>
 
-  <a href="../index.php" class="botao">Continuar comprando</a>
+  <a href="index.php" class="botao">Continuar comprando</a>
 <?php endif; ?>
 
 
-<?php include '../includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
+
